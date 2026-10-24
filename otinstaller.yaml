@@ -27,7 +27,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/safebrowsing@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/safebrowsing@sha256:ea65de964d4fbe59f2ca86630dc50bd234f3bcd63c689071626d21fac8c6601b
   platforms: [linux/amd64, linux/arm64]
   command: ["safebrowsing-url", "{url}"]
   output_format: json
